@@ -3,8 +3,9 @@ def Prime_Check (Number):
     i = 2
 
     while(i <= Number//2):
-        count = count + 1
-        break
+        if (Number % i == 0):
+            count = count + 1
+            break
     i = i + 1
 
     if (count == 0 and Number != 1):
@@ -17,7 +18,7 @@ def Prime_Check (Number):
 def main():
 
     Number = int(input( " Please enter any number: "))
-    Prime_Check(Number)
+    Number = Prime_Check(Number)
 
 
     F1 = 0
